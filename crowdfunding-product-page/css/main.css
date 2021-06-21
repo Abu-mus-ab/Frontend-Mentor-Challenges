@@ -281,28 +281,48 @@ header .container nav ul li a {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 2em;
+  padding: 2em 1.5em;
   padding-top: 10em;
 }
 
 .modal .back-project-modal .modal-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  place-content: space-between;
   margin-bottom: 1em;
 }
 
 .modal .back-project-modal .modal-header .close-modal {
-  width: 9%;
+  float: right;
+  padding-top: 5px;
 }
 
 .modal .back-project-modal .modal-header h3 {
+  display: inline-block;
   font-weight: 700;
+}
+
+.modal .back-project-modal .modal-inner-card {
+  padding: 1em 0;
+}
+
+.modal .back-project-modal .modal-inner-card .pledge-input {
+  padding: 1.6em 0 .8em 0;
+  width: 100%;
+  border-top: 1px solid var(--Dark-gray);
+  text-align: center;
+}
+
+.modal .back-project-modal .modal-inner-card .pledge-input .card-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  margin: 0 2em;
+}
+
+.modal .back-project-modal .modal-inner-card .pledge-input .card-component input {
+  width: 100px;
+  padding: 1.2em 2em;
+  border: 1px solid var(--Dark-gray);
+  border-radius: 25px;
 }
 
 .modal .back-project-modal p {
@@ -312,25 +332,17 @@ header .container nav ul li a {
   margin-bottom: 1.2em;
 }
 
-.modal .back-project-modal .pledge-heading {
-  font-weight: 800;
-  margin: 1em 0 1em 1em;
+.modal .back-project-modal p.modal-text {
+  padding: 0 1em;
+  margin-top: 1.2em;
 }
 
-.modal .back-project-modal .inner-card-radio-group span {
-  display: block;
-  margin-top: .5em;
-  margin-left: 2em;
-  color: var(--Moderate-cyan);
-  font-weight: 600;
-}
-
-.modal .back-project-modal .modal-text {
-  margin-top: 1em;
+.modal .back-project-modal h3.time-left {
+  padding: 0 1em;
 }
 
 .modal .back-project-modal h3 {
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
 
 .modal .back-project-modal h3 span {
@@ -361,24 +373,58 @@ header .container nav ul li a {
   padding: 1.8em 2.5em;
 }
 
-.custom-radio-btn {
+.radio-button-group {
+  padding: 0 1em;
+  margin-top: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.radio-button-group .pledge .pledge-heading {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.radio-button-group .pledge .pledge-amount {
+  display: block;
+  color: var(--Moderate-cyan);
+  font-weight: 600;
+}
+
+.radio-button-group .custom-radio-btn {
+  margin-right: .9em;
   width: 25px;
   height: 25px;
   border: 2px solid var(--Moderate-cyan);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.custom-radio-btn .checkmark {
-  width: 5px;
-  height: 5px;
-  background-color: #000;
+.radio-button-group .custom-radio-btn .checkmark {
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  border-radius: 50%;
+  background: var(--Moderate-cyan);
   display: none;
 }
 
-.custom-radio-btn input {
+.radio-button-group .custom-radio-btn input {
   display: none;
 }
 
-.custom-radio-btn input:checked + .checkmark {
+.radio-button-group .custom-radio-btn input:checked + .checkmark {
   display: inline-block;
 }
 /*# sourceMappingURL=main.css.map */

@@ -277,24 +277,47 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 2em;
+    padding: 2em 1.5em;
     padding-top: 10em;
 
     .back-project-modal {
         // display: none;
 
         .modal-header {
-            display: flex;
-            flex-direction: row-reverse;
-            place-content: space-between;
             margin-bottom: 1em;
 
             .close-modal {
-                width: 9%;
+                float: right;
+                padding-top: 5px;
             }
 
             h3 {
+                display: inline-block;
                 font-weight: 700;
+            }
+        }
+
+        .modal-inner-card {
+            padding: 1em 0;
+
+            .pledge-input {
+                padding: 1.6em 0 .8em 0;
+                width: 100%;
+                border-top: 1px solid var(--Dark-gray);
+                text-align: center;
+
+                .card-component {
+                    display: flex;
+                    place-content: space-between;
+                    margin: 0 2em;
+
+                    input {
+                        width: 100px;
+                        padding: 1.2em 2em;
+                        border: 1px solid var(--Dark-gray);
+                        border-radius: 25px;
+                    }
+                }
             }
         }
 
@@ -305,28 +328,18 @@ header {
             margin-bottom: 1.2em;
         }
 
-        .pledge-heading {
-            font-weight: 800;
-            margin: 1em 0 1em 1em;
+        p.modal-text {
+            padding: 0 1em;
+            margin-top: 1.2em;
         }
 
-        .inner-card-radio-group {
-
-            span {
-                display: block;
-                margin-top: .5em;
-                margin-left: 2em;
-                color: var(--Moderate-cyan);
-                font-weight: 600;
-            }
-        }
-
-        .modal-text {
-            margin-top: 1em;
+        h3.time-left {
+            padding: 0 1em;
         }
 
         h3 {
-            margin-bottom: 1em;
+            // padding: 0 1em;
+            margin-bottom: .5em;
             span {
                 font-weight: 400;
                 color: var(--Dark-gray);
@@ -358,24 +371,53 @@ header {
     }
 }
 
-.custom-radio-btn {
-    width: 25px;
-    height: 25px;
-    border: 2px solid var(--Moderate-cyan);
 
-    .checkmark {
-        width: 5px;
-        height: 5px;
-        background-color: #000;
-        display: none;
+.radio-button-group {
+    padding: 0 1em;
+    margin-top: .5em;
+    display: flex;
+    align-items: center;
+
+    .pledge {
+
+        
+        .pledge-heading {
+            font-size: 16px;
+            font-weight: 800;
+            // margin-left: 1em;
+        }
+
+        .pledge-amount {
+            display: block;
+            color: var(--Moderate-cyan);
+            font-weight: 600;
+        }
     }
 
-    input {
-        display: none;
-    }
+    .custom-radio-btn {
+        margin-right: .9em;
+        width: 25px;
+        height: 25px;
+        border: 2px solid var(--Moderate-cyan);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    input:checked + .checkmark {
-        display: inline-block;
+        .checkmark {
+            width: calc(100% - 6px);
+            height: calc(100% - 6px);
+            border-radius: 50%;
+            background: var(--Moderate-cyan);
+            display: none;
+        }
+
+        input {
+            display: none;
+
+            &:checked + .checkmark {
+                display: inline-block;
+            }
+        }
     }
-    
 }
