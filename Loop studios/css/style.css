@@ -41,6 +41,10 @@ a {
   width: 100%;
 }
 
+.hidden {
+  display: none;
+}
+
 ul {
   list-style: none;
 }
@@ -232,9 +236,5 @@ footer .footer-right .social-icons a:hover {
 footer .footer-right p {
   color: var(--Dark-Gray);
   margin-bottom: 1em;
-}
-
-.hidden {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -17,7 +17,7 @@ body {
     --Very-Dark-Gray: hsl(0, 0%, 41%);
 }
 
-// Components
+// Global styles
 a {
     cursor: pointer;
     text-decoration: none;
@@ -41,6 +41,10 @@ a {
     width: 100%;
 }
 
+
+.hidden {
+    display: none;
+}
 
 ul {
     list-style: none;
@@ -240,9 +244,4 @@ footer {
             margin-bottom: 1em;
         }
     }
-}
-
-
-.hidden {
-    display: none;
 }
