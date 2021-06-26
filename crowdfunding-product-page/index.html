@@ -49,7 +49,7 @@
           </div>
 
           <div class="card-component">
-            <button class="btn btn-primary">Back this project</button>
+            <button class="btn btn-primary btn-modal">Back this project</button>
 
             <button class="btn-bookmark btn">
               <img src="images/icon-bookmark.svg" alt="Bookmark icon">
@@ -101,7 +101,7 @@
                 <div class="card-component card-component-space-between">
                   <h3>101 <span>left</span></h3>
 
-                  <button class="btn btn-primary">Select Reward</button>
+                  <button class="btn btn-primary btn-modal">Select Reward</button>
                 </div>
             </div>
             <div class="inner-card black-edition-stand">
@@ -116,7 +116,7 @@
               <div class="card-component card-component-space-between">
                 <h3>64 <span>left</span></h3>
 
-                <button class="btn btn-primary">Select Reward</button>
+                <button class="btn btn-primary btn-modal">Select Reward</button>
               </div>
             </div>
 
@@ -142,7 +142,7 @@
     <!-- Selection modal start -->
   
 
-    <div class="modal">
+    <div class="modal show">
       <div class="container">
         <div class="card back-project-modal">
 
@@ -157,7 +157,7 @@
             <div class="radio-button-group">
                 <label class="custom-radio-btn">
                     <span class="label"></span>
-                    <input type="radio" name="choice">
+                    <input type="radio" name="choice" data-toggle="0" class="radio-got-it">
                     <span class="checkmark"></span>
                 </label>
                 <h3 class="pledge-heading">Pledge with no reward</h3>
@@ -173,7 +173,7 @@
             <div class="radio-button-group">
               <label class="custom-radio-btn">
                   <span class="label"></span>
-                  <input type="radio" name="choice">
+                  <input type="radio" name="choice" data-toggle="0" class="radio">
                   <span class="checkmark"></span>
               </label>
               <div class="pledge">
@@ -190,7 +190,7 @@
 
             <h3 class="time-left">101<span> left</span></h3>
 
-            <div class="pledge-input">
+            <div class="pledge-input hidden">
               <p>Enter your pledge</p>
               <div class="card-component">
                 <div class="input-group">
@@ -206,7 +206,7 @@
             <div class="radio-button-group">
                 <label class="custom-radio-btn">
                     <span class="label"></span>
-                    <input type="radio" name="choice">
+                    <input type="radio" name="choice" data-toggle="0" class="radio">
                     <span class="checkmark"></span>
                 </label>
                 <div class="pledge">
@@ -221,7 +221,7 @@
 
               <h3 class="time-left">64<span> left</span></h3>
 
-              <div class="pledge-input">
+              <div class="pledge-input hidden">
                 <p>Enter your pledge</p>
                 <div class="card-component">
                   <div class="input-group">
@@ -251,7 +251,7 @@
               to our Backer member list. Shipping is included.</p>
               <h3 class="time-left">0<span> left</span></h3>
               <!-- <hr> -->
-              <div class="pledge-input">
+              <div class="pledge-input hidden">
                 <p>Enter your pledge</p>
                 <div class="card-component">
                   <div class="input-group">
