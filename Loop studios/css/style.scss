@@ -456,3 +456,41 @@ footer {
     }
 }
 
+@media only screen and(min-width: 1024px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    header {
+        .container {
+            display: grid;
+            grid-template-columns: 350px auto;
+
+            nav {
+                ul {
+                    float: right;
+                }
+            }
+            .hero-text {
+                grid-column: 1/2;
+            }
+        }
+    }
+
+    .vr-section {
+
+        .container {
+            grid-template-columns: repeat(6, 152px);grid-auto-rows: minmax(100px, auto);
+
+            .grid-col-left {
+                grid-row: 1/5;
+            }
+            .grid-col-right {
+                grid-row: 2/5;
+                padding-top: 5em;
+                padding-left: 3em;
+            }
+        }
+    }
+}
