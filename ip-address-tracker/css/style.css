@@ -50,7 +50,10 @@ header .container .input-group input[type="text"] {
   border-top-left-radius: 1em;
   border-bottom-left-radius: 1em;
   width: 100%;
-  padding: 1.5em;
+  padding: 1em;
+  font-size: 18px;
+  color: var(--Very-Dark-Gray);
+  font-weight: 700;
 }
 
 header .container .input-group input[type="submit"] {
@@ -63,13 +66,12 @@ header .container .input-group input[type="submit"] {
 }
 
 header .container .ip-info-display {
-  display: none;
   z-index: 99;
-  width: 80%;
+  width: 90%;
   background: #fff;
   position: absolute;
   left: 50%;
-  margin-left: -164px;
+  margin-left: calc(-90%/2);
   padding: 1em;
   border-radius: 1em;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -85,12 +87,50 @@ header .container .ip-info-display .grid-item h3 {
   color: var(--Very-Dark-Gray);
 }
 
-iframe, .attribution {
-  display: none;
-}
-
 iframe {
   height: 550px;
   width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  header .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  header .container .input-group {
+    width: 55%;
+    margin: 1em auto;
+  }
+  header .container .ip-info-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 50%;
+  }
+  header .container .ip-info-display .grid-item {
+    font-size: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    width: 25%;
+    position: relative;
+    padding: .5em 0 .5em 0;
+    margin-right: 1em;
+  }
+  header .container .ip-info-display .grid-item p {
+    font-size: 15px;
+  }
+  header .container .ip-info-display .grid-item > div {
+    height: 50px;
+    border-right: 1px solid var(--Dark-Gray);
+  }
+  header .container .ip-info-display .grid-item .isp {
+    border: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
