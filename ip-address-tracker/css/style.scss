@@ -68,7 +68,7 @@ header {
 
         .ip-info-display {
             // display: none;
-            z-index: 99;
+            z-index: 999;
             width: 90%;
             background: #fff;
             position: absolute;
@@ -92,10 +92,8 @@ header {
         }
     }
 }
-iframe, .attribution {
-    // display: none;
-}
-iframe {
+
+#map {
     height: 550px;
     width: 100%;
 }
@@ -136,7 +134,7 @@ iframe {
 
                     > div {
                     //    margin-top: 1em;
-                        height: 50px;
+                        height: 60px;
                         border-right: 1px solid var(--Dark-Gray);
                     }
 

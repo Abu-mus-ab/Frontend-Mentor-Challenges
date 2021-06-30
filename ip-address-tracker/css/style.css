@@ -66,7 +66,7 @@ header .container .input-group input[type="submit"] {
 }
 
 header .container .ip-info-display {
-  z-index: 99;
+  z-index: 999;
   width: 90%;
   background: #fff;
   position: absolute;
@@ -87,7 +87,7 @@ header .container .ip-info-display .grid-item h3 {
   color: var(--Very-Dark-Gray);
 }
 
-iframe {
+#map {
   height: 550px;
   width: 100%;
 }
@@ -126,7 +126,7 @@ iframe {
     font-size: 15px;
   }
   header .container .ip-info-display .grid-item > div {
-    height: 50px;
+    height: 60px;
     border-right: 1px solid var(--Dark-Gray);
   }
   header .container .ip-info-display .grid-item .isp {
